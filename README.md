@@ -1,9 +1,10 @@
 # Salary-Benchmark-With-Matrix-Factorization
-predicting salary scales by matrix factorization with laplacian regularizers
 
-SalaryBenchmark is Python package used for salary predictions. 
+SalaryBenchmark is Cython package used for salary predicting. 
 
-The methods are based on enhanced SVD and NMF models. 
+The methods are based on SVD and NMF models with laplacian regularizers. 
+
+You can download the Data from Google Drive.
 
 Installation:
 Before to install the package, you need to meet the requirements listed below:
@@ -16,4 +17,6 @@ Before to install the package, you need to meet the requirements listed below:
 5. ipython
 6. pickle
 
-Then we can use setup.py file to install this cython package.
+Then you can use setup.py file to install this cython package. The command is:
+  python setup.py build
+  python setup.py install
