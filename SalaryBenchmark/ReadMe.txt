@@ -5,7 +5,7 @@ SalaryBenchmark is Python package used for salary predictions.
 The methods are based on enhanced SVD and NMF models. 
 
 Installation:
-Before to install the package, you need the requirements listed below:
+Before to install the package, you need to meet the requirements listed below:
 
 0. python2.7
 1. numpy
