@@ -4,9 +4,10 @@ SalaryBenchmark is Cython package used for salary predicting.
 
 The methods are based on SVD and NMF models with laplacian regularizers. 
 
-You can download the Data from Google Drive.
+## Data
+You can download the Data from [Google Drive](https://drive.google.com/open?id=19YZ34nAI66ARFK5nTJKYBKa8ylOXlElj).
 
-Installation:
+## Installation:
 Before to install the package, you need to meet the requirements listed below:
 
 0. python2.7
@@ -18,5 +19,5 @@ Before to install the package, you need to meet the requirements listed below:
 6. pickle
 
 Then you can use setup.py file to install this cython package. The command is:
-  python setup.py build
-  python setup.py install
+  $python setup.py build
+  $python setup.py install
