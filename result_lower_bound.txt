@@ -1,0 +1,5 @@
+HSBMF, val rmse is:0.774426,val mae is:0.593820	Thu Aug 23 18:38:52 2018
+HSBMF, val rmse is:0.784219,val mae is:0.603323	Thu Aug 23 18:41:35 2018
+HSBMF, val rmse is:0.785391,val mae is:0.603090	Thu Aug 23 18:44:19 2018
+HSBMF, val rmse is:0.781022,val mae is:0.599359	Thu Aug 23 18:54:58 2018
+HSBMF, val rmse is:0.779051,val mae is:0.597341	Thu Aug 23 18:57:34 2018
