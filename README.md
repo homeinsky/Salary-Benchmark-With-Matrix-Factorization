@@ -18,8 +18,7 @@ Before to install the package, you need to meet the requirements listed below:
 5. ipython
 6. pickle
 
-Then you can use setup.py file to install this cython package. The command is:
+Then you can use setup.py file to install this cython package. The commands are:
 
   $python setup.py build
-  
   $python setup.py install
