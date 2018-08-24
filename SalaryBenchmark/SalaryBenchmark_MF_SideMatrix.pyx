@@ -96,6 +96,8 @@ def SalaryBenchamrk_SVD_SideMatrix(trainset,user_sim,item_sim,reg_su=5e-5,reg_si
 
     return aux_pu,aux_qi
 
+# the function below is deprecated.
+
 def SlaryBenchmark_NMF_SideMatrix(trainset,user_sim,item_sim,reg_su=5e-5,reg_si=5e-5,reg_t=5e-5,reg_l=5e-5,b=2.0):
 	# This function return matrices used in SalaryBenchmark_NMF based methods.
 	# trainset: trainset contain salaries of 'time-specific job and location specific company' combinations. The format of trainset is pre-defined
