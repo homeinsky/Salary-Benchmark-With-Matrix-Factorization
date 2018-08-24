@@ -10,8 +10,8 @@ from six.moves import range
 This file defines two classes used to predict salaries by two Matrix Factorization based methods-- SVD, NMF.
 Both of the two methods utilized job-similarity, company-similarity, time-similarity, location-similarity regularizations
 We initialize model by setting the common used parameters in MF-based models. 
-We need to pass trainset, aux_pu, aux_qi (or aux_pu_num,aux_pu_denom,aux_qi_num,aux_qi_denom)to "train" function to train the model. trainset is pre-defined by Surprise--another package
-used for matrix factorization. aux_pu, aux_qi (or aux_pu_num,aux_pu_denom,aux_qi_num,aux_qi_denom) is prepared by SalaryBenchmark_MF_SideMatrix firstly.
+We need to pass trainset, aux_pu, aux_qi (or aux_pu_num,aux_pu_denom,aux_qi_num,aux_qi_denom)to "train" the model. trainset is pre-defined by Surprise--another package
+used for matrix factorization. aux_pu, aux_qi (or aux_pu_num,aux_pu_denom,aux_qi_num,aux_qi_denom) is prepared by SalaryBenchmark_MF_SideMatrix.
 "estimate" function used for predictions.
 
 Authors: Qingxin Meng(xinmeng320@gmail.com)
@@ -21,7 +21,7 @@ Date:    2018/01/18
 
 
 class SalaryBenchmark_SVD(AlgoBase):
-    def __init__(self, n_factors=5, n_epochs=50, biased=True, init_mean=0,
+    def __init__(self, n_factors=5, n_epochs=100, biased=True, init_mean=0,
                  init_std_dev=.1, lr_all=.005, reg_all=.02,
                  lr_bu=None, lr_bi=None, lr_pu=None, lr_qi=None,
                  reg_bu=None, reg_bi=None, reg_pu=None, reg_qi=None,
@@ -159,9 +159,11 @@ class SalaryBenchmark_SVD(AlgoBase):
                 raise PredictionImpossible('User and item are unkown.')
 
         return est
+    
+ # the class below is deprecated.
 
 class SalaryBenchmark_NMF(AlgoBase):
-    def __init__(self, n_factors=5, n_epochs=50, biased=True, reg_pu=.06,
+    def __init__(self, n_factors=5, n_epochs=100, biased=True, reg_pu=.06,
                  reg_qi=.06, reg_bu=.02, reg_bi=.02, reg_su=5e-5,reg_si=5e-5,reg_t=1e-5,
                  lr_bu=.005, lr_bi=.005,init_low=0, init_high=1, verbose=False):
 
