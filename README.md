@@ -1,11 +1,24 @@
 # Salary-Benchmark-With-Matrix-Factorization
 
 SalaryBenchmark is Cython package used for salary predicting. 
+This code is used in the paper **Intelligent Salary Benchmarking for Talent Recruitment: A Holistic Matrix Factorization Approach**
+The methods are based on SVD and NMF models with laplacian regularizers.
 
-The methods are based on SVD and NMF models with laplacian regularizers. 
+## Reference
+If you use this code or data as part of any published research, please acknowledge the following paper:
+```
+@inproceedings{qingxin2018intelligent,
+  title={Intelligent Salary Benchmarking for Talent Recruitment: A Holistic Matrix Factorization Approach},
+  author={Qingxin Meng,Hengshu Zhu,Keli Xiao,Hui Xiong},
+  booktitle={ICDM 2018},
+  year={2018}
+}
+```
 
 ## Data
 You can download the Data from [Google Drive](https://drive.google.com/open?id=19YZ34nAI66ARFK5nTJKYBKa8ylOXlElj).
+**Notice: the data is published for research use only, any commercial use is prohibited **
+
 1. salary_lower_bound.p  records the salary lower bound level for each company ID and job ID, the data format is pandas dataframe.
 2. salary_upper_bound.p records the salary upper bound level for each company ID and job ID, the data format is pandas dataframe.
 3. companay_similarity_matrix.p records the similarities between companies, the coloumn/row indexes correspond with company ID. The format is numpy array.
