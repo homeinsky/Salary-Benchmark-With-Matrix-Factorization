@@ -11,9 +11,10 @@ If you use this code or data as part of any published research, please acknowled
 ```
 @inproceedings{qingxin2018intelligent,
   title={Intelligent Salary Benchmarking for Talent Recruitment: A Holistic Matrix Factorization Approach},
-  author={Qingxin Meng,Hengshu Zhu,Keli Xiao,Hui Xiong},
-  booktitle={ICDM 2018},
-  year={2018}
+  author={Meng, Qingxin and Zhu, Hengshu and Xiao, Keli and Xiong, Hui},
+  booktitle={Data Mining (ICDM), 2018 IEEE International Conference on},
+  year={2018},
+  organization={IEEE}
 }
 ```
 
